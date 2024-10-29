@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New Subtraction</title>
+  </head>
+  <body>
+    <%= render partial: "shared_header" %>
+    
+    <h1>New Subtraction</h1>
+
+    <form action="/subtract/results">
+      <div>
+        <label for="first_number">Subtract this:</label>
+        <input type="text" name="first_number" id="first_number">
+      </div>
+
+      <div>
+        <label for="second_number">from this:</label>
+        <input type="text" name="second_number" id="second_number">
+      </div>
+
+      <button>Subtract!</button>
+    </form>
+  </body>
+</html>

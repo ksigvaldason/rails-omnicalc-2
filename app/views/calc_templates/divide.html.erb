@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New Addition</title>
+  </head>
+  <body>
+    <%= render partial: "shared_header" %>
+    
+    <h1>New Division</h1>
+
+    <form action="/divide/results">
+      <div>
+        <label for="first_number">Divide this:</label>
+        <input type="text" name="first_number" id="first_number">
+      </div>
+
+      <div>
+        <label for="second_number">by this:</label>
+        <input type="text" name="second_number" id="second_number">
+      </div>
+
+      <button>Divide!</button>
+    </form>
+  </body>
+</html>
